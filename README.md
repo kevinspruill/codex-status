@@ -8,6 +8,8 @@ The goal is simple: make it obvious when Codex is thinking, running a command,
 editing files, waiting for approval, compacting context, using a subagent, or
 done.
 
+![Codex Status smoke-test session flyout](docs/assets/smoketest-session-flyout.png)
+
 ## Features
 
 - Windows notification-area icon for idle, active, approval, done, failed, and stale states.
