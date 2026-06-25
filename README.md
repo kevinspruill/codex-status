@@ -8,7 +8,14 @@ The goal is simple: make it obvious when Codex is thinking, running a command,
 editing files, waiting for approval, compacting context, using a subagent, or
 done.
 
-![Codex Status smoke-test session flyout](docs/assets/smoketest-session-flyout.png)
+## Desktop Status Examples
+
+The floating pill sits above the Windows taskbar and updates as Codex moves
+through a turn.
+
+| Idle | Thinking | Processing result |
+| --- | --- | --- |
+| ![Codex Status idle above the Windows tray](docs/assets/desktop-idle.png) | ![Codex Status thinking above the Windows tray](docs/assets/desktop-thinking.png) | ![Codex Status processing result above the Windows tray](docs/assets/desktop-processing.png) |
 
 ## Features
 
@@ -19,6 +26,14 @@ done.
 - Local state files under `%USERPROFILE%\.codex\statusbar` by default.
 - Settings for command-text hiding, secret redaction, sounds, startup, state path, and pill behavior.
 - Best-effort failure isolation: malformed hook input is logged locally and does not break Codex.
+
+## Session Flyout
+
+Double-click the tray icon or click the floating pill to open the session flyout.
+The flyout shows each tracked Codex session plus the latest hook stdin payload
+fields captured during a smoke test.
+
+![Codex Status smoke-test session flyout](docs/assets/smoketest-session-flyout.png)
 
 ## Requirements
 
